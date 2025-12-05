@@ -3,27 +3,88 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Headphones — Hamburger</title>
+  <title>Headphones — Full Page</title>
   <link rel="stylesheet" href="8-styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container header-top">
-      <div class="brand">
-        <img src="assets/images/logo.svg" alt="logo" class="logo">
-        <span class="brand-text">HEADPHONES</span>
-      </div>
 
-      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">☰</button>
-
-      <nav class="main-nav" id="mainNav">
-        <a href="#what">what we do</a>
-        <a href="#results">our results</a>
-        <a href="#contact">contact us</a>
-      </nav>
+<header class="site-header">
+  <div class="container header-top">
+    <div class="brand">
+      <img src="assets/images/logo.png" alt="Headphones logo" class="logo">
+      <span class="brand-text">HEADPHONES</span>
     </div>
-  </header>
 
-  <script src="8-script.js"></script>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <nav class="main-nav" id="nav">
+      <a href="#what">what we do</a>
+      <a href="#results">our results</a>
+      <a href="#contact">contact us</a>
+    </nav>
+  </div>
+
+  <div class="hero">
+    <picture>
+      <source media="(max-width:480px)" srcset="assets/images/hero-mobile.jpg">
+      <img src="assets/images/hero-desktop.jpg" class="hero-img" alt="">
+    </picture>
+
+    <div class="hero-overlay">
+      <div class="hero-inner container">
+        <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+        <p class="hero-sub">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+        <a class="btn primary" href="#">CALL TO ACTION</a>
+        <p class="hero-note">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="what container" id="what">
+  <h2>What we do…</h2>
+  <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  <div class="services">
+    <article class="service"><h3>Lorem ipsum</h3><p>Lorem ipsum dolor sit amet</p></article>
+    <article class="service"><h3>Lorem ipsum</h3><p>Lorem ipsum dolor sit amet</p></article>
+    <article class="service"><h3>Lorem ipsum</h3><p>Lorem ipsum dolor sit amet</p></article>
+    <article class="service"><h3>Lorem ipsum</h3><p>Lorem ipsum dolor sit amet</p></article>
+  </div>
+</section>
+
+<section class="results" id="results">
+  <div class="container">
+    <h2>Our results speak for themselves</h2>
+    <div class="pentagon-grid">
+      <div class="pentagon-card"><div class="pentagon">+2%</div></div>
+      <div class="pentagon-card"><div class="pentagon">+2%</div></div>
+      <div class="pentagon-card"><div class="pentagon">+2%</div></div>
+      <div class="pentagon-card"><div class="pentagon">+2%</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact container" id="contact">
+  <h2>Contact us</h2>
+  <form class="contact-form">
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <textarea rows="5" placeholder="Message"></textarea>
+    <button class="btn primary">CALL TO ACTION</button>
+  </form>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© headphones 2020</p>
+  </div>
+</footer>
+
+<script src="8-script.js"></script>
 </body>
 </html>

@@ -3,25 +3,110 @@
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Footer</title>
-  <link rel="stylesheet" href="4-styles.css">
+  <title>Headphones — Full Page</title>
+  <link rel="stylesheet" href="7-styles.css">
 </head>
 <body>
+
+  <!-- Header / Hero -->
+  <header class="site-header">
+    <div class="container header-top">
+      <div class="brand">
+        <img src="assets/images/logo.png" alt="Headphones logo" class="logo">
+        <span class="brand-text">HEADPHONES</span>
+      </div>
+      <nav class="main-nav">
+        <a href="#what">what we do</a>
+        <a href="#results">our results</a>
+        <a href="#contact">contact us</a>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <picture>
+        <source media="(max-width:480px)" srcset="assets/images/hero-mobile.jpg">
+        <img src="assets/images/hero-desktop.jpg" alt="Woman with headphones" class="hero-img">
+      </picture>
+
+      <div class="hero-overlay">
+        <div class="hero-inner container">
+          <h1>Lorem ipsum dolor set amet lorem ipsum</h1>
+          <p class="hero-sub">Lorem ipsum dolor set amet lorem ipsum dolor set</p>
+          <a class="btn primary" href="#">CALL TO ACTION</a>
+          <p class="hero-note">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- What We Do -->
+  <section class="what container" id="what">
+    <h2>What we do…</h2>
+    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <div class="services">
+      <article class="service">
+        <svg class="icon" viewBox="0 0 24 24" width="72" height="72"><path fill="none" stroke="#FF6565" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 3v18M5 8v8M19 8v8"/></svg>
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </article>
+      <article class="service">
+        <svg class="icon" viewBox="0 0 24 24" width="72" height="72"><path fill="none" stroke="#FF6565" stroke-width="1.6" d="M3 3h18v18H3z"/></svg>
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </article>
+      <article class="service">
+        <svg class="icon" viewBox="0 0 24 24" width="72" height="72"><path fill="none" stroke="#FF6565" stroke-width="1.6" d="M12 2l3 7h7l-5.5 4 2 7L12 17 4.5 20l2-7L1 9h7z"/></svg>
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </article>
+      <article class="service">
+        <svg class="icon" viewBox="0 0 24 24" width="72" height="72"><path fill="none" stroke="#FF6565" stroke-width="1.6" d="M2 12h20M12 2v20"/></svg>
+        <h3>Lorem ipsum</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Our Results -->
+  <section class="results" id="results">
+    <div class="container">
+      <h2>Our results speak for themselves</h2>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <div class="pentagon-grid">
+        <div class="pentagon-card"><div class="pentagon"><span class="big">+2%</span><span class="small">Lorem ipsum dolor</span></div></div>
+        <div class="pentagon-card"><div class="pentagon"><span class="big">+2%</span><span class="small">Lorem ipsum dolor</span></div></div>
+        <div class="pentagon-card"><div class="pentagon"><span class="big">+2%</span><span class="small">Lorem ipsum dolor</span></div></div>
+        <div class="pentagon-card"><div class="pentagon"><span class="big">+2%</span><span class="small">Lorem ipsum dolor</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact container" id="contact">
+    <h2>Contact us</h2>
+    <form class="contact-form" novalidate>
+      <label><input type="text" name="name" placeholder="Name" required></label>
+      <label><input type="email" name="email" placeholder="Email" required></label>
+      <label><textarea name="message" placeholder="Your message" rows="6"></textarea></label>
+      <button class="btn primary" type="submit">CALL TO ACTION</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <div class="brand">
         <img src="assets/images/logo.png" alt="logo" class="logo">
         <span class="brand-text">HEADPHONES</span>
       </div>
-
       <div class="socials">
         <a class="social" href="#" aria-label="facebook">f</a>
         <a class="social" href="#" aria-label="twitter">t</a>
         <a class="social" href="#" aria-label="instagram">i</a>
       </div>
     </div>
-
     <div class="container copyright">© headphones 2020</div>
   </footer>
+
 </body>
 </html>
