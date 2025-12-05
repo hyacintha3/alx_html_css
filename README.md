@@ -41,3 +41,5 @@ How to preview:
 1. Open the `headphones` folder in VS Code.
 2. Install Live Server extension.
 3. Right-click any `*-index.html` file and choose "Open with Live Server".
+
+this headphone website its real good and it can help every begginer for codding
