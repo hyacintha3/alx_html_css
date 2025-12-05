@@ -1,0 +1,17 @@
+*{box-sizing:border-box}
+:root{--accent:#FF6565;--maxw:1000px}
+body{font-family:"Source Sans Pro", Arial, sans-serif;color:#0b2330}
+.container{max-width:var(--maxw);margin:0 auto;padding:0 20px}
+.contact{padding:72px 0;text-align:center}
+.contact h2{font-size:22px;margin-bottom:20px}
+.contact-form{max-width:480px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
+.contact-form input, .contact-form textarea{padding:12px;border:0;border-bottom:1px solid #e6e6e6;outline:none;font-size:14px}
+.contact-form button{align-self:center;padding:12px 28px;border-radius:28px;border:0;background:var(--accent);color:white;font-weight:700}
+.contact-form button:hover{opacity:0.9}
+
+/* mobile */
+@media (max-width:480px){
+  .contact{padding:40px 0}
+  .contact h2{font-size:20px}
+  .contact-form{gap:14px;padding:0 6px}
+}

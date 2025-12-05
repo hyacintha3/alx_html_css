@@ -1,0 +1,16 @@
+*{box-sizing:border-box}
+:root{--dark:#051622}
+body{font-family:"Source Sans Pro", Arial, sans-serif;margin:0}
+.container{max-width:1000px;margin:0 auto;padding:0 20px}
+.site-footer{background:var(--dark);color:white;padding:36px 0}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;padding-bottom:22px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:36px}
+.socials .social{display:inline-block;width:36px;height:36px;border-radius:50%;background:white;color:var(--dark);text-align:center;line-height:36px;margin-left:10px;text-decoration:none}
+.copyright{color:rgba(255,255,255,0.5);font-size:13px;text-align:center;padding-top:6px}
+
+/* mobile */
+@media (max-width:480px){
+  .footer-inner{flex-direction:column;gap:12px}
+}
+

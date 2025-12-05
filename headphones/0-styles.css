@@ -1,0 +1,57 @@
+/* RESET */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+:root{
+  --accent: #FF6565;
+  --maxw: 1000px;
+  /* --nav-color: rgba(255,255,255,0.95); */
+  --dark: #071a27; /* deep blue/near-black used in sections */
+}
+body { font-family: "Source Sans Pro", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; color: #0b1b2a; }
+
+/* container */
+.container { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
+
+/* header top */
+.header-top { display:flex; align-items:center; justify-content:space-between; padding:26px 0; position:relative; z-index:3; }
+.brand { display:flex; align-items:center; gap:12px; color:white; }
+.logo { width:36px; height:36px; display:block; }
+.brand-text { color: var(--nav-color); font-weight:700; letter-spacing:1px; }
+
+/* nav */
+.main-nav a { color: var(--nav-color); margin-left:24px; text-decoration:none; font-weight:600; font-size:14px; text-transform:lowercase; }
+.main-nav a:hover { color: var(--accent); }
+
+/* hero area */
+.hero { position:relative; height: 720px; overflow:hidden; display:block; }
+.hero-img { width:100%; height:100%; object-fit:cover; display:block; filter:grayscale(40%); transform:scale(1.03); }
+
+/* overlay gradient to match image in design */
+.hero-overlay {
+  position:absolute; inset:0;
+  background: linear-gradient(180deg, rgba(7,26,39,0.15) 20%, rgba(7,26,39,0.85) 80%);
+  display:flex; align-items:center; justify-content:center;
+  padding: 60px 0;
+}
+
+/* hero content */
+.hero-inner { text-align:center; color:white; padding: 120px 20px; }
+.hero-inner h1 { font-size:34px; line-height:1.2; margin-bottom:10px; font-weight:700; max-width:680px; margin-left:auto;margin-right:auto; }
+.hero-sub { color: rgba(255,255,255,0.9); margin-bottom:18px; font-weight:500; }
+.btn { display:inline-block; padding:12px 30px; border-radius:26px; text-decoration:none; font-weight:700; }
+.btn.primary { background: var(--accent); color:white; }
+.btn.primary:hover{ opacity:0.9; }
+
+/* bottom descriptive note */
+.hero-note { color: rgba(255,255,255,0.85); margin-top:24px; max-width:720px; margin-left:auto;margin-right:auto; }
+
+/* desktop -> mobile adjustments */
+@media (max-width: 480px) {
+  .main-nav { display:none; } /* hamburger will be added in task 8 */
+  .header-top { padding:18px 0; }
+  .hero { height: 740px; }
+  .hero-inner { padding: 80px 20px; }
+  .hero-inner h1 { font-size:22px; }
+  .hero-sub { font-size:13px; }
+  .hero-note { display:block; font-size:13px; margin-top:18px; padding:0 10px; }
+}
+.site-header{background:linear-gradient(180deg, rgba(10, 34, 47, 0.9), rgba(8, 26, 43, 0.98)), url('assets/images/logo.png') center/cover no-repeat; padding:80px 0}
